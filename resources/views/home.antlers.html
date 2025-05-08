@@ -12,13 +12,31 @@
     height="664"
     :breakpoints="['xl', 'lg']"
     class="hidden md:block" }}
-
     <article class="px-20 py-20 md:bg-white/80 md:absolute md:top-60 xl:top-90 md:right-20 lg:right-40 xl:right-[calc((100vw_-_100rem)/2)] md:flex md:items-center md:p-30 lg:p-50 xl:p-60">
       <h1 class="text-3xl lg:text-4xl xl:text-5xl leading-[1.1]">
         Arbeiten mit<br>Weitblick:<br>
         <strong>Co-Working<br>mit Aussicht</strong>
       </h1>
     </article>
-
     {{ partial:icons/badge class="absolute top-30 xl:top-135 left-20 lg:left-40 xl:left-[calc(((100vw_-_100rem)/2)_+_70px)] size-145 lg:size-170 xl:size-[280px]" }}
+</section>
+
+<section class="my-40 xl:my-64">
+  <div class="w-full lg:grid lg:grid-cols-12 lg:gap-x-16 lg:max-w-page lg:mx-auto">
+    <div class="lg:col-span-6 xl:col-span-6 xl:col-start-6 lg:order-2">
+      {{ partial:components/media/image 
+        image="visual-projekt" 
+        alt="" 
+        width="1000" 
+        height="1000" }}
+    </div>
+
+    <article class="px-20 lg:px-40 pt-20 pb-40 lg:col-span-6 xl:col-span-4 lg:order-1 flex flex-col justify-center">
+      <h2 class="font-bold text-3xl lg:text-4xl xl:text-5xl mb-10 lg:mb-20">
+        Projekt
+      </h2>
+      <p>Wir vermieten stilvolle Co-Working Spaces und einzelne Arbeitsplätze im Attika-Stock der Täfernstrasse 14a in Dättwil. Das hochwertig ausgestattete Grossraumbüro überzeugt mit modernen Möbeln von USM und Wilkhahn sowie grossen Fensterfronten, die für viel Tageslicht und eine fantastische Aussicht sorgen. Eine gut ausgestattete Küche und eine grosse Terrasse bieten den idealen Rahmen für entspannte Pausen – perfekt für produktives Arbeiten.</p>
+    </article>
+
+  </div>
 </section>
