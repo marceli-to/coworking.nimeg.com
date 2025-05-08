@@ -1,0 +1,24 @@
+<section class="relative">
+  {{ partial:components/media/image 
+    image="visual-usm-mobile" 
+    alt="" 
+    width="1000" 
+    height="1000"
+    class="md:hidden" }}
+  {{ partial:components/media/image 
+    image="visual-usm" 
+    alt="" 
+    width="1440" 
+    height="664"
+    :breakpoints="['xl', 'lg']"
+    class="hidden md:block" }}
+
+    <article class="px-20 py-20 md:bg-white/80 md:absolute md:top-60 xl:top-90 md:right-20 lg:right-40 xl:right-[calc((100vw_-_100rem)/2)] md:flex md:items-center md:p-30 lg:p-50 xl:p-60">
+      <h1 class="text-3xl lg:text-4xl xl:text-5xl leading-[1.1]">
+        Arbeiten mit<br>Weitblick:<br>
+        <strong>Co-Working<br>mit Aussicht</strong>
+      </h1>
+    </article>
+
+    {{ partial:icons/badge class="absolute top-30 xl:top-135 left-20 lg:left-40 xl:left-[calc(((100vw_-_100rem)/2)_+_70px)] size-145 lg:size-170 xl:size-[280px]" }}
+</section>

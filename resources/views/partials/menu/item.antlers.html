@@ -1,0 +1,10 @@
+<li>
+  <a 
+    href="{{ url }}" 
+    class="block w-full leading-none font-bold text-2xl lg:text-md text-center hover:lg:underline lg:underline-offset-4 lg:decoration-2 {{ is_current || is_parent ? '' : '' }}"
+    x-on:click="menu = false" 
+    target="{{ is_external ? '_blank' : '_self' }}"
+    title="{{ title }}">
+    {{ title }}
+  </a>
+</li>

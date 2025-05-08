@@ -1,0 +1,68 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: interest_commercial
+            field:
+              type: toggle
+              display: Gewerbeflächen
+              width: 50
+          -
+            handle: interest_office
+            field:
+              type: toggle
+              display: Büroflächen
+              width: 50
+          -
+            handle: company
+            field:
+              type: text
+              display: Firma
+              validate:
+                - required
+          -
+            handle: contact_person
+            field:
+              type: text
+              display: Kontaktperson
+              validate:
+                - required
+          -
+            handle: street_number
+            field:
+              type: text
+              display: Strasse/Nr.
+              validate:
+                - required
+          -
+            handle: location
+            field:
+              type: text
+              display: PLZ/Ort
+              validate:
+                - required
+          -
+            handle: email
+            field:
+              input_type: email
+              type: text
+              display: E-Mail
+              validate:
+                - required
+                - email
+          -
+            handle: phone
+            field:
+              input_type: tel
+              type: text
+              display: Telefon
+          -
+            handle: privacy
+            field:
+              type: toggle
+              display: Privacy
+              validate:
+                - accepted

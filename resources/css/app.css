@@ -1,0 +1,22 @@
+@import "typo/webfonts.css";
+@import "vendor/mapbox.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+  @apply hidden;
+}
+
+main {
+  @apply flex-1;
+}
+
+h1, h2, h3 {
+}
+
+strong {
+  @apply font-bold;
+}
+
