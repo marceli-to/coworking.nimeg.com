@@ -1,29 +1,49 @@
 <section class="relative">
   {{ partial:components/media/image 
-    image="visual-usm-mobile" 
-    alt="" 
-    width="1000" 
-    height="1000"
-    class="md:hidden" }}
-  {{ partial:components/media/image 
     image="visual-usm" 
     alt="" 
     width="1440" 
     height="664"
     :breakpoints="['xl', 'lg']"
-    class="hidden md:block" }}
-    <article class="px-20 py-20 md:bg-white/80 md:absolute md:top-60 xl:top-90 md:right-20 lg:right-40 xl:right-[calc((100vw_-_100rem)/2)] md:flex md:items-center md:p-30 lg:p-50 xl:p-60">
-      <h1 class="text-3xl lg:text-4xl xl:text-5xl leading-[1.1]">
-        Arbeiten mit<br>Weitblick:<br>
-        <strong>Co-Working<br>mit Aussicht</strong>
-      </h1>
-    </article>
-    {{ partial:icons/badge class="absolute top-30 xl:top-135 left-20 lg:left-40 xl:left-[calc(((100vw_-_100rem)/2)_+_70px)] size-145 lg:size-170 xl:size-[280px]" }}
+    class="aspect-[16/9] lg:aspect-[16/8] object-cover hidden md:block" }}
+
+    {{ partial:components/media/image 
+      image="visual-usm-mobile" 
+      alt="" 
+      width="1000" 
+      height="1000"
+      class="md:hidden" }}
+
+
+    <div class="md:absolute md:inset-0 md:w-full md:h-full">
+      <div class="md:grid md:grid-cols-12 md:gap-x-16 w-full max-w-page mx-auto">
+
+        <div class="absolute top-40 left-20 md:relative md:top-0 md:left-0 md:col-span-3 xl:col-start-2 md:ml-20 lg:ml-40 xl:-ml-50 md:mt-45 lg:mt-75 xl:mt-125">
+          {{ partial:icons/badge class="size-145 lg:size-170 xl:size-[240px]" }}
+        </div>
+
+        <div class="md:col-span-9 lg:col-span-9 xl:col-span-5 md:col-start-6 xl:col-start-8 md:justify-self-end md:mt-50 md:mr-20 lg:mr-40 xl:mr-0 xl:mt-95">
+          <article class="px-20 py-20 md:bg-white/80 md:inline-flex md:items-center md:p-30 lg:p-40 xl:p-60 w-auto md:max-w-[425px] lg:max-w-[500px] xl:max-w-[660px]">
+            <div>
+              <h1 class="text-3xl lg:text-4xl xl:text-5xl leading-[1.1] mb-20 xl:mb-40">
+                Arbeiten mit<br>Weitblick:<br>
+                <strong>Co-Working<br>mit Aussicht</strong>
+              </h1>
+              <p class="text-lg xl:text-xl leading-[1.2] !mb-0">
+                Entdecke unsere modernen Arbeitsplätze im Gewerbegebiet Täfern in Baden-Dättwil.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
 </section>
 
-<section class="my-40 xl:my-64">
-  <div class="w-full lg:grid lg:grid-cols-12 lg:gap-x-16 lg:max-w-page lg:mx-auto">
-    <div class="lg:col-span-6 xl:col-span-6 xl:col-start-6 lg:order-2">
+
+<section class="my-64">
+  <a name="projekt"></a>
+  <div class="w-full md:grid md:grid-cols-12 md:gap-x-16 max-w-page mx-auto">
+    <div class="md:col-span-6 md:col-start-7 xl:col-start-6 md:order-2">
       {{ partial:components/media/image 
         image="visual-projekt" 
         alt="" 
@@ -31,12 +51,32 @@
         height="1000" }}
     </div>
 
-    <article class="px-20 lg:px-40 pt-20 pb-40 lg:col-span-6 xl:col-span-4 lg:order-1 flex flex-col justify-center">
+    <article class="px-20 lg:px-40 pt-20 pb-40 md:col-span-6 lg:col-span-5 xl:col-span-4 md:order-1 flex flex-col justify-center">
       <h2 class="font-bold text-3xl lg:text-4xl xl:text-5xl mb-10 lg:mb-20">
         Projekt
       </h2>
       <p>Wir vermieten stilvolle Co-Working Spaces und einzelne Arbeitsplätze im Attika-Stock der Täfernstrasse 14a in Dättwil. Das hochwertig ausgestattete Grossraumbüro überzeugt mit modernen Möbeln von USM und Wilkhahn sowie grossen Fensterfronten, die für viel Tageslicht und eine fantastische Aussicht sorgen. Eine gut ausgestattete Küche und eine grosse Terrasse bieten den idealen Rahmen für entspannte Pausen – perfekt für produktives Arbeiten.</p>
     </article>
 
+  </div>
+</section>
+
+<section class="my-64">
+  <a name="projekt"></a>
+  <div class="w-full md:grid md:grid-cols-12 md:gap-x-16 max-w-page mx-auto">
+    <div class="md:col-span-6 xl:col-span-7 md:order-1">
+      {{ partial:components/media/image 
+        image="visual-projekt" 
+        alt="" 
+        width="1000" 
+        height="1000" }}
+    </div>
+
+    <article class="px-20 lg:px-40 pt-20 pb-40 md:col-span-6 md:order-2 lg:col-span-5 xl:col-span-4 flex flex-col justify-center">
+      <h2 class="font-bold text-3xl lg:text-4xl xl:text-5xl mb-10 lg:mb-20">
+        Angebot
+      </h2>
+      <p>Bei uns entstehen moderne Arbeitsplätze mit schnellen Glasfaseranschlüssen und leistungsstarker Infrastruktur. Ein separates Sitzungszimmer steht für Meetings bereit. Die kleine Küche mit Kaffeemaschine und die gemütliche Sitzecke bieten Raum für Erholung und Austausch. Ein moderner Drucker rundet die Ausstattung ab – ideal für fokussiertes Arbeiten und kreativen Austausch.<br><br>Für Preisinformationen oder Fragen kontaktieren Sie uns gerne telefonisch oder über das Kontaktformular.</p>
+    </article>
   </div>
 </section>
