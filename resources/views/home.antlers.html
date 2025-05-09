@@ -122,18 +122,20 @@
 
   <div class="w-full md:grid md:grid-cols-12 md:gap-x-16 max-w-page mx-auto">
 
-    <div class="md:col-span-6 xl:col-start-2 md:order-1 px-20 lg:pl-60 xl:pl-0">
-      {{ partial:misc/contact-form }}
-    </div>
-
-    <div class="md:col-span-6 xl:col-span-3 xl:col-start-9 md:order-2 flex flex-col justify-center">
-      <article class="px-20 lg:px-60 xl:px-0 pt-20 md:pt-0">
+    <div class="md:col-span-6 xl:col-span-3 xl:col-start-9 order-1 md:order-2 flex flex-col justify-center">
+      <article class="px-20 lg:px-60 xl:px-0 md:pt-0 mb-20 md:mb-0">
         <h2 class="font-bold text-3xl lg:text-4xl xl:text-5xl mb-10 lg:mb-20">
           Kontakt
         </h2>
-        <p>Bei Interesse oder für weitere Informationen stehen wir Ihnen gerne zur Verfügung. Kontaktieren Sie uns über das Formular oder rufen Sie uns unter <a href="tel:0628735025" title="Rufen Sie uns an" class="hover:underline underline-offset-2 decoration-1">062 873 50 25</a> direkt an.</p>
+        <p>Bei Interesse oder für weitere Informationen stehen wir Ihnen gerne zur Verfügung. Kontaktieren Sie uns über das Formular oder rufen Sie uns unter <a href="tel:0628735025" title="Rufen Sie uns an" class="hover:underline underline-offset-2 decoration-1">062&nbsp;873&nbsp;50&nbsp;25</a> direkt an.</p>
       </article>
     </div>
+
+    <div class="md:col-span-6 xl:col-start-2 order-2 md:order-1 px-20 lg:pl-60 xl:pl-0">
+      {{ partial:misc/contact-form }}
+    </div>
+
+
 
   </div>
 </section>
