@@ -39,14 +39,6 @@ return [
 
     'widgets' => [
         //'getting_started',
-        [ 
-          'type' => 'collection',
-          'collection' => 'objects',
-          'limit' => 25,
-          'title' => 'Objekte',
-          'width' => 100,
-          'sort' => 'order',
-        ], 
     ],
 
     /*
