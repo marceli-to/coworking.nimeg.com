@@ -1,26 +1,26 @@
 const initMap = () => {
   mapboxgl.accessToken = 'pk.eyJ1IjoibWFyY2VsaXRvb29vIiwiYSI6ImNtNm1hNG5vdDBmaGUya3NoZnRldnhqd3YifQ.CMI4nKvoE7I8H9Dal7IHyw';
 
-  // get zoom from data attribute from #map element
-
   const zoom = document.getElementById('map').dataset.zoom;
 
-  var map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/marcelitoooo/ck16ms7m51nlo1cmwnqrbjuyq?optimize=true',
-      center: [8.79958356703086, 47.258948004965205],
-      zoom: zoom
+  const latLong = [8.29285128631892, 47.448015724736244];
+
+  const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/marcelitoooo/ck16ms7m51nlo1cmwnqrbjuyq?optimize=true',
+    center: latLong,
+    zoom: zoom
   });
   map.addControl(new mapboxgl.NavigationControl());
   map.scrollZoom.disable();
 
-  var geojson = {
+  const geojson = {
     type: 'FeatureCollection',
     features: [{
       type: 'Feature',
       geometry: {
         type: 'Point',
-        coordinates: [8.79958356703086, 47.258948004965205]
+        coordinates: latLong
       },
       properties: {
         title: 'Werkwinkel',
@@ -31,15 +31,14 @@ const initMap = () => {
 
   // add markers to map
   geojson.features.forEach(function(marker) {
-
-  // create a HTML element for each feature
-  var el = document.createElement('div');
-  el.className = 'marker';
-
-  // make a marker for each feature and add to the map
-  new mapboxgl.Marker(el)
-    .setLngLat(marker.geometry.coordinates)
-    .addTo(map);
+    // create a HTML element for each feature
+    const el = document.createElement('div');
+    el.className = 'marker';
+  
+    // make a marker and attach the popup
+    new mapboxgl.Marker(el)
+      .setLngLat(marker.geometry.coordinates)
+      .addTo(map);
   });
 };
 

@@ -26,6 +26,8 @@ export default {
 
       colors: {
         'granite': '#707070',
+        'crimson': '#ed5e5e',
+        'sky': '#39a5e4'
       },
 
       fontFamily: {
