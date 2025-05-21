@@ -39,99 +39,122 @@
     </div>
 </section>
 
-<section class="my-40 md:my-60 xl:my-90">
-
-  <a name="projekt"></a>
+<section class="my-40 md:my-60 xl:my-90" id="projekt">
 
   <div class="w-full md:grid md:grid-cols-12 md:gap-x-16 max-w-page mx-auto">
     
-    <div class="md:col-span-6 md:order-2 xl:col-start-6">
-
-      {{ partial:components/media/image 
-        image="visual-projekt" 
-        alt="" 
-        width="900" 
-        height="900" }}
+    <div class="md:col-span-6 xl:col-span-5 md:order-2 xl:col-start-7">
+      {{ partial:components/swiper/wrapper }}
+        {{ partial:components/swiper/slide }}
+          {{ partial:components/media/image 
+            image="visual-projekt" 
+            alt="" 
+            width="900" 
+            height="900" }}
+        {{ /partial:components/swiper/slide }}
+        {{ partial:components/swiper/slide }}
+          {{ partial:components/media/image 
+            image="visual-projekt" 
+            alt="" 
+            width="900" 
+            height="900" }}
+        {{ /partial:components/swiper/slide }}  
+      {{ /partial:components/swiper/wrapper }}
     </div>
 
-    <div class="md:col-span-6 xl:col-span-3 xl:col-start-2 md:order-1 flex flex-col justify-center">
+    <div class="md:col-span-6 xl:col-span-4 xl:col-start-2 md:order-1 flex flex-col justify-center">
       <article class="px-20 lg:px-60 xl:px-0 pt-20 md:pt-0">
         <h2 class="font-bold text-3xl lg:text-4xl xl:text-5xl mb-10 lg:mb-20">
           Projekt
         </h2>
-        <p>Wir vermieten stilvolle Co-Working Spaces und einzelne Arbeitsplätze im Attika-Stock der Täfernstrasse 14a in Dättwil. Das hochwertig ausgestattete Grossraumbüro überzeugt mit modernen Möbeln von USM und Wilkhahn sowie grossen Fensterfronten, die für viel Tageslicht und eine fantastische Aussicht sorgen. Eine gut ausgestattete Küche und eine grosse Terrasse bieten den idealen Rahmen für entspannte Pausen – perfekt für produktives Arbeiten.</p>
+        <p>Wir vermieten stilvolle Co-Working Spaces oder einzelne Arbeitsplätze im Attikageschoss mit Dachterrasse im Täfernquartier, in Baden Dättwil.<br>Dieser Raum soll die bestmögliche Arbeitsatmosphäre für Produktivität und Kreativität schaffen. Um das zu erreichen haben unsere Partner alles gegeben:</p>
+        <ul>
+          <li><a href="https://a04.ch" target="_blank" title="A04 – Innenarchitektur">A04 – Innenarchitektur</a></li>
+          <li><a href="https://usm.com/de-ch" target="_blank" title="USM Mobiliar – Einrichtung">USM Mobiliar – Einrichtung</a></li>
+          <li><a href="https://wilkhahn.ch" target="_blank" title="Wilkhahn">Wilkhahn</a></li>
+          <li><a href="https://ebv-immobilien.ch" target="_blank" title="EBV Immobilien – Liegenschaftsverwaltung">EBV Immobilien – Liegenschaftsverwaltung</a></li>
+        </ul>
+        <p>Wir selber sind im <a href="https://nimeg.com" target="_blank" title="nimeg.com">Engineering</a> kreativ und in Projekten tätig. Wir freuen uns auf neue Bekanntschaften und die Möglichkeit, Netzwerke zu erweitern, wo es möglich ist. Wir bieten die «perfekte» und top moderne Arbeitsumgebung für die besten Ergebnisse. Eine grosse Terrasse und eine Lounge im Innenbereich bieten den idealen Rahmen für entspannte Pausen und kreativen Austausch – perfekt für produktives Arbeiten.</p>
       </article>
     </div>
 
   </div>
 </section>
 
-<section class="my-40 md:my-60 xl:my-90">
-
-  <a name="angebot"></a>
+<section class="my-40 md:my-60 xl:my-90" id="angebot">
 
   <div class="w-full md:grid md:grid-cols-12 md:gap-x-16 max-w-page mx-auto">
 
-    <div class="md:col-span-6 xl:col-start-2 md:order-1">
-      {{ partial:components/media/image 
-        image="visual-angebot" 
-        alt="" 
-        width="900" 
-        height="900" }}
+    <div class="md:col-span-6 xl:col-span-5 xl:col-start-2 md:order-1">
+      {{ partial:components/swiper/wrapper }}
+        {{ partial:components/swiper/slide }}
+          {{ partial:components/media/image 
+            image="visual-angebot" 
+            alt="" 
+            width="900" 
+            height="900" }}
+        {{ /partial:components/swiper/slide }}
+        {{ partial:components/swiper/slide }}
+          {{ partial:components/media/image 
+            image="visual-angebot" 
+            alt="" 
+            width="900" 
+            height="900" }}
+        {{ /partial:components/swiper/slide }}  
+      {{ /partial:components/swiper/wrapper }}
     </div>
 
-    <div class="md:col-span-6 xl:col-span-3 xl:col-start-9 md:order-2 flex flex-col justify-center">
+    <div class="md:col-span-6 xl:col-span-4 xl:col-start-8 md:order-2 flex flex-col justify-center">
       <article class="px-20 lg:px-60 xl:px-0 pt-20 md:pt-0">
         <h2 class="font-bold text-3xl lg:text-4xl xl:text-5xl mb-10 lg:mb-20">
           Angebot
         </h2>
-        <p>Bei uns entstehen moderne Arbeitsplätze mit schnellen Glasfaseranschlüssen und leistungsstarker Infrastruktur. Ein separates Sitzungszimmer steht für Meetings bereit. Die kleine Küche mit Kaffeemaschine und die gemütliche Sitzecke bieten Raum für Erholung und Austausch. Ein moderner Drucker rundet die Ausstattung ab – ideal für fokussiertes Arbeiten und kreativen Austausch.<br><br>Für Preisinformationen oder Fragen kontaktieren Sie uns gerne telefonisch oder über das Kontaktformular.</p>
+        <p>Es kann gewählt werden, zwischen Arbeitsbereichen oder Einzelplätzen. Grosse Fensterfronten sorgen für viel Tageslicht und eine fantastische Aussicht bis zu den Voralpen. Jeder kann den Aussenbereich, Meetingraum, die Lounge und die Küche nutzen. Internet, Drucker, Scanner und Schliessfächer stehen für alle zur Verfügung. Auf Wunsch kann ein Tiefgaragenstellplatz gemietet werden.
+        <p>Dafür können auch verschiedene Dienstleistungen im administrativen Bereich genutzt werden - die besten Rahmenbedingungen für fokussiertes Arbeiten.</p>
+        <p>Für Preise zu den Angeboten nehmen Sie Kontakt auf via <a href="mailto:co-office@nimeg.com">Mail</a>, <a href="tel:0628735025" title="Rufen Sie uns an" >Telefon</a> oder <a href="#kontakt">Kontaktformular</a></p>
       </article>
     </div>
 
   </div>
 </section>
 
-<section class="my-40 md:my-60 xl:my-90">
-  
-  <a name="lage"></a>
+<section class="my-40 md:my-60 xl:my-90" id="lage">
 
   <div class="w-full md:grid md:grid-cols-12 md:gap-x-16 max-w-page mx-auto">
     
-    <div class="md:col-span-6 md:order-2 xl:col-start-6">
+    <div class="md:col-span-6 md:order-2 xl:col-span-5 xl:col-start-7">
       <div class="aspect-square bg-gray-200">
         {{ partial:misc/map zoom="13" }}
       </div>
     </div>
 
-    <div class="md:col-span-6 xl:col-span-3 xl:col-start-2 md:order-1 flex flex-col justify-center">
+    <div class="md:col-span-6 xl:col-span-4 xl:col-start-2 md:order-1 flex flex-col justify-center">
       <article class="px-20 lg:px-60 xl:px-0 pt-20 md:pt-0">
         <h2 class="font-bold text-3xl lg:text-4xl xl:text-5xl mb-10 lg:mb-20">
           Lage
         </h2>
-        <p>Dättwil ist ein Teil der Gemeinde Baden und liegt nur etwa 10 Minuten vom Stadtzentrum Baden entfernt – sowohl mit dem Auto als auch mit den öffentlichen Verkehrsmitteln. Die direkte Anbindung an die Autobahn A1 ermöglicht eine schnelle und unkomplizierte Erreichbarkeit aus Zürich und anderen wichtigen Wirtschaftsregionen. Diese strategisch günstige Lage macht Dättwil zu einem attraktiven Standort für Unternehmen, die von einer ausgezeichneten Verkehrsanbindung und der Nähe zu wirtschaftlichen Knotenpunkten profitieren möchten.</p>
+        <p>Das Täfernquartier liegt in Dättwil, 10 Minuten vom Stadtzentrum Baden und 3 Minuten vom Autobahnanschluss A1 entfernt. Zwischen Zürich und Aarau gelegen ist die Anbindung mit dem Auto oder den öffentlichen Verkehrsmitteln ideal, wenn man in alle Richtungen flexibel bleiben will oder den Stau nach Zürich einfach auslassen möchte. Die Verbindung in sämtliche Wirtschaftsregionen ist perfekt. Unternehmen können so von der optimalen Lage profitieren.</p>
+        <p><a href="https://maps.app.goo.gl/EtX3eDTKU456GShG7" target="_blank" title="Google Maps">Google Maps</a></p>
       </article>
     </div>
 
   </div>
 </section>
 
-<section class="my-40 md:my-60 xl:my-90">
-
-  <a name="kontakt"></a>
+<section class="my-40 md:my-60 xl:my-90" id="kontakt">
 
   <div class="w-full md:grid md:grid-cols-12 md:gap-x-16 max-w-page mx-auto">
 
-    <div class="md:col-span-6 xl:col-span-3 xl:col-start-9 order-1 md:order-2 flex flex-col justify-center">
+    <div class="md:col-span-6 xl:col-span-4 xl:col-start-8 order-1 md:order-2 flex flex-col justify-center">
       <article class="px-20 lg:px-60 xl:px-0 md:pt-0 mb-20 md:mb-0">
         <h2 class="font-bold text-3xl lg:text-4xl xl:text-5xl mb-10 lg:mb-20">
           Kontakt
         </h2>
-        <p>Bei Interesse oder für weitere Informationen stehen wir Ihnen gerne zur Verfügung. Kontaktieren Sie uns über das Formular oder rufen Sie uns unter <a href="tel:0628735025" title="Rufen Sie uns an" class="hover:underline underline-offset-2 decoration-1">062&nbsp;873&nbsp;50&nbsp;25</a> direkt an.</p>
+        <p>Bei Interesse oder für weitere Informationen stehen wir Ihnen gerne zur Verfügung. Kontaktieren Sie uns über das Formular oder rufen Sie uns unter <a href="tel:0628735025" title="Rufen Sie uns an">062&nbsp;873&nbsp;50&nbsp;25</a> direkt an.</p>
       </article>
     </div>
 
-    <div class="md:col-span-6 xl:col-start-2 order-2 md:order-1 px-20 lg:pl-60 xl:pl-0">
+    <div class="md:col-span-6 xl:col-span-5 xl:col-start-2 order-2 md:order-1 px-20 lg:pl-60 xl:pl-0">
       {{ partial:misc/contact-form }}
     </div>
 
