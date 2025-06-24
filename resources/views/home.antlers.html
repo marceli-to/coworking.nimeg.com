@@ -1,22 +1,66 @@
 <section class="relative">
-  {{ partial:components/media/image 
-    image="visual-usm" 
-    alt="" 
-    width="1440" 
-    height="664"
-    :breakpoints="['xl', 'lg']"
-    class="aspect-[16/9] lg:aspect-[16/8] object-cover hidden md:block" }}
-
+  {{ partial:components/swiper/wrapper class="hidden md:block relative" }}
+    {{ partial:components/swiper/slide }}
+      {{ partial:components/media/image 
+        image="nimeg-coworking-spaces-daettwil-header1" 
+        alt="" 
+        width="1440" 
+        height="664"
+        :breakpoints="['xl', 'lg']"
+        class="aspect-[16/9] lg:aspect-[16/8] object-cover hidden md:block" }}
+    {{ /partial:components/swiper/slide }}
+    {{ partial:components/swiper/slide }}
+      {{ partial:components/media/image 
+        image="nimeg-coworking-spaces-daettwil-header2" 
+        alt="" 
+        width="1440" 
+        height="664"
+        :breakpoints="['xl', 'lg']"
+        class="aspect-[16/9] lg:aspect-[16/8] object-cover hidden md:block" }}
+    {{ /partial:components/swiper/slide }}
+    {{ partial:components/swiper/slide }}
     {{ partial:components/media/image 
-      image="visual-usm-mobile" 
+      image="nimeg-coworking-spaces-daettwil-header3" 
+      alt="" 
+      width="1440" 
+      height="664"
+      :breakpoints="['xl', 'lg']"
+      class="aspect-[16/9] lg:aspect-[16/8] object-cover hidden md:block" }}
+  {{ /partial:components/swiper/slide }}
+  {{ /partial:components/swiper/wrapper }}
+
+  {{ partial:components/swiper/wrapper class="block md:hidden relative" }}
+    {{ partial:components/swiper/slide }}
+      {{ partial:components/media/image 
+        image="nimeg-coworking-spaces-daettwil-header1-mobile" 
+        alt="" 
+        width="1000" 
+        height="1000"
+        class="md:hidden" }}
+    {{ /partial:components/swiper/slide }}
+    {{ partial:components/swiper/slide }}
+      {{ partial:components/media/image 
+        image="nimeg-coworking-spaces-daettwil-header2-mobile" 
+        alt="" 
+        width="1000" 
+        height="1000"
+        class="md:hidden" }}
+    {{ /partial:components/swiper/slide }}
+    {{ partial:components/swiper/slide }}
+    {{ partial:components/media/image 
+      image="nimeg-coworking-spaces-daettwil-header3-mobile" 
       alt="" 
       width="1000" 
       height="1000"
       class="md:hidden" }}
-    <div class="md:absolute md:inset-0 md:w-full md:h-full">
+  {{ /partial:components/swiper/slide }}
+  {{ /partial:components/swiper/wrapper }}
+
+
+    <div class="md:absolute md:inset-0 md:w-full md:h-[calc(100%_-_60px)] z-[100]">
       <div class="md:grid md:grid-cols-12 md:gap-x-16 w-full max-w-page mx-auto">
 
-        <div class="absolute top-40 left-20 md:relative md:top-0 md:left-0 md:col-span-3 xl:col-start-2 md:ml-20 lg:ml-40 xl:-ml-50 md:mt-45 lg:mt-75 xl:mt-125">
+        <div class="absolute top-40  z-[100] left-20 md:relative md:top-0 md:left-0 md:col-span-3 xl:col-start-2 md:ml-20 lg:ml-40 xl:-ml-50 md:mt-45 lg:mt-75 xl:mt-125">
           {{ partial:icons/badge class="size-145 lg:size-170 xl:size-[240px]" }}
         </div>
 
@@ -45,14 +89,35 @@
       {{ partial:components/swiper/wrapper }}
         {{ partial:components/swiper/slide }}
           {{ partial:components/media/image 
-            image="visual-projekt-1" 
+            image="nimeg-coworking-spaces-daettwil-projekt1" 
             alt="" 
             width="900" 
             height="900" }}
         {{ /partial:components/swiper/slide }}
         {{ partial:components/swiper/slide }}
           {{ partial:components/media/image 
-            image="visual-projekt-2" 
+            image="nimeg-coworking-spaces-daettwil-projekt2" 
+            alt="" 
+            width="900" 
+            height="900" }}
+        {{ /partial:components/swiper/slide }}
+        {{ partial:components/swiper/slide }}
+          {{ partial:components/media/image 
+            image="nimeg-coworking-spaces-daettwil-projekt3" 
+            alt="" 
+            width="900" 
+            height="900" }}
+        {{ /partial:components/swiper/slide }}  
+        {{ partial:components/swiper/slide }}
+          {{ partial:components/media/image 
+            image="nimeg-coworking-spaces-daettwil-projekt4" 
+            alt="" 
+            width="900" 
+            height="900" }}
+        {{ /partial:components/swiper/slide }}  
+        {{ partial:components/swiper/slide }}
+          {{ partial:components/media/image 
+            image="nimeg-coworking-spaces-daettwil-projekt6" 
             alt="" 
             width="900" 
             height="900" }}
@@ -84,11 +149,50 @@
   <div class="w-full md:grid md:grid-cols-12 md:gap-x-16 max-w-page mx-auto">
 
     <div class="md:col-span-6 md:order-1">
-      {{ partial:components/media/image 
-        image="visual-angebot-2" 
-        alt="" 
-        width="900" 
-        height="900" }} 
+      {{ partial:components/swiper/wrapper }}
+      {{ partial:components/swiper/slide }}
+        {{ partial:components/media/image 
+          image="nimeg-coworking-spaces-daettwil-angebot1" 
+          alt="" 
+          width="900" 
+          height="900" }}
+      {{ /partial:components/swiper/slide }}
+      {{ partial:components/swiper/slide }}
+        {{ partial:components/media/image 
+          image="nimeg-coworking-spaces-daettwil-angebot2" 
+          alt="" 
+          width="900" 
+          height="900" }}
+      {{ /partial:components/swiper/slide }}
+      {{ partial:components/swiper/slide }}
+        {{ partial:components/media/image 
+          image="nimeg-coworking-spaces-daettwil-angebot3" 
+          alt="" 
+          width="900" 
+          height="900" }}
+      {{ /partial:components/swiper/slide }}  
+      {{ partial:components/swiper/slide }}
+        {{ partial:components/media/image 
+          image="nimeg-coworking-spaces-daettwil-angebot4" 
+          alt="" 
+          width="900" 
+          height="900" }}
+      {{ /partial:components/swiper/slide }}  
+      {{ partial:components/swiper/slide }}
+        {{ partial:components/media/image 
+          image="nimeg-coworking-spaces-daettwil-angebot5" 
+          alt="" 
+          width="900" 
+          height="900" }}
+      {{ /partial:components/swiper/slide }}  
+      {{ partial:components/swiper/slide }}
+        {{ partial:components/media/image 
+          image="nimeg-coworking-spaces-daettwil-angebot6" 
+          alt="" 
+          width="900" 
+          height="900" }}
+      {{ /partial:components/swiper/slide }}  
+    {{ /partial:components/swiper/wrapper }}
     </div>
 
     <div class="md:col-span-6 xl:col-span-4 xl:col-start-8 md:order-2 flex flex-col justify-center">
